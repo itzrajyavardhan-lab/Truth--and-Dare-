@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haanji pages</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <p class="sub-text">
+                “Yeh meri zindagi ka sabse khoobsurat jawab hai.” ? 🥰
+
+
+            
+            </p>
+            </p>
+
+            <div class="btn-group"> </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function createFlyingHearts() {
+        const duration = 5000; // 5 seconds
+        const interval = setInterval(() => {
+            const heart = document.createElement("div");
+            heart.textContent = "❤️";
+            heart.style.position = "fixed";
+            heart.style.fontSize = Math.random() * 30 + 30 + "px";
+            heart.style.pointerEvents = "none";
+            heart.style.zIndex = "999";
+            heart.style.animation = "floatUp 3s ease-in forwards";
+            
+            const x = Math.random() * window.innerWidth;
+            heart.style.left = x + "px";
+            heart.style.bottom = "-50px";
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), 3000);
+        }, 200);
+        
+        // Stop creating hearts after 5 seconds
+        setTimeout(() => clearInterval(interval), duration);
+    }
+
+    // Start flying hearts when page loads
+    window.addEventListener("load", createFlyingHearts);
+</script>
+
+</html>
+

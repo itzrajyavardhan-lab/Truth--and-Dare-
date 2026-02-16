@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <head>
+<link href="https://fonts.cdnfonts.com/css/concreate-fill" rel="stylesheet">    </head>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box dare-box">
+
+            <p class="sub-text">
+                Thumare hisab se mujhe tum me kya accha lagta hai ?
+
+                <button class="opt1" onclick="goToCaring()">Tumhara caring nature</button>
+
+                <button class="opt2" onclick="goToHonest()">Thumara honest dil</button>
+
+                <button class="opt3" onclick="goToSmile()">Tumhari cute smile</button>
+
+            </p>
+            </p>
+
+            <div class="btn-group"> </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", function () {
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+    });
+</script>
+
+</html>
+
